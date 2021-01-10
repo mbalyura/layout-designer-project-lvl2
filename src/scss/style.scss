@@ -1,8 +1,28 @@
-header {
-  width: 50%;
-  background: brown;
+@import "_colors";
+@import "_mixins";
+@import "_vars";
+@import "framework";
+@import "blocks/header";
+@import "blocks/description";
+// @import "blocks/pricing";
+// @import "blocks/news";
+// @import "blocks/app";
+// @import "blocks/footer";
 
-  &.w-100 {
-    width: 100%;
-  }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+       url("../fonts/Roboto-Regular.ttf");
+}
+
+*, *:before, *:after {
+  @include reset;
+  @include border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background: $black;
 }

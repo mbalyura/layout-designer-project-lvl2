@@ -1,1 +1,158 @@
-/** CSS STYLE **/
+.color-white {
+  color: #fff;
+}
+
+.color-gray {
+  color: #E0E0E0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 45px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+@media (max-width: 1220px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex.flex-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+header .container nav {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 30px;
+}
+header .container nav .logo {
+  position: relative;
+  margin-left: 40px;
+}
+header .container nav .logo:before {
+  position: absolute;
+  top: -6px;
+  left: -40px;
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-image: url("../images/icons/logo.svg");
+  background-repeat: no-repeat;
+}
+header .container nav .menu {
+  margin-left: 88px;
+  width: 315px;
+}
+header .container nav .menu .menu-item:hover {
+  color: #fff;
+}
+@media (max-width: 600px) {
+  header .container nav .menu {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  header .container nav .menu .menu-item {
+    margin-left: 0px;
+    margin-bottom: 3px;
+  }
+}
+@media (max-width: 600px) {
+  header .container nav {
+    flex-direction: column;
+  }
+  header .container nav .menu {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+}
+header .container .search {
+  width: 250px;
+  margin-top: 25px;
+}
+header .container .search input {
+  color: #fff;
+  border-radius: 1em;
+  background-color: #3C3B3D;
+  width: 100%;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 5px 10px;
+}
+@media (max-width: 850px) {
+  header .container {
+    flex-direction: column;
+  }
+  header .container .search {
+    margin-top: 15px;
+  }
+}
+
+section#page-description {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  flex-direction: column;
+  position: relative;
+}
+section#page-description:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../images/banner.png") top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
+}
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background: #08020D;
+}
+
+/*# sourceMappingURL=style.css.map */

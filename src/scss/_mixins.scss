@@ -1,0 +1,10 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+}

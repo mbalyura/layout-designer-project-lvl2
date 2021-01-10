@@ -1,0 +1,51 @@
+.color-white {
+  color: $white;
+}
+
+.color-gray {
+  color: $gray;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 45px;
+}
+
+.container {
+  max-width: $desctop;
+  margin: auto;
+
+  @media (max-width: $desctop + 20px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.flex-between {
+    justify-content: space-between;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
