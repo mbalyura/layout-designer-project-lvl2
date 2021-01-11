@@ -1,13 +1,6 @@
 @import "_colors";
 @import "_mixins";
 @import "_vars";
-@import "framework";
-@import "blocks/header";
-@import "blocks/description";
-// @import "blocks/pricing";
-// @import "blocks/news";
-// @import "blocks/app";
-// @import "blocks/footer";
 
 @font-face {
   font-family: "Roboto";
@@ -24,5 +17,17 @@
 
 body {
   font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5em;
   background: $black;
+
 }
+
+@import "framework";
+
+@import "blocks/header";
+@import "blocks/description";
+@import "blocks/pricing";
+@import "blocks/news";
+@import "blocks/app";
+@import "blocks/footer";

@@ -25,7 +25,7 @@
             </div>
           </nav>
           <form class="search-form" action="#">
-            <input class="uppercase" type="text" name="search" placeholder="Поиск..." />
+            <input class="uppercase color-white" type="text" name="search" placeholder="Поиск..." />
           </form>
         </div>
       </header>
@@ -35,15 +35,112 @@
         <span class="form-description color-white">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</span>
         <form class="access-form" action="#">
           <div class="form-inputs flex flex-wrap">
-            <input class="input-name" type="text" name="name" placeholder="Имя" />
-            <input class="input-email" type="text" name="email" placeholder="Email" />
+            <input class="input-name color-white" type="text" name="name" placeholder="Имя" />
+            <input class="input-email color-white" type="email" name="email" placeholder="Email" />
           </div>
           <button class="uppercase color-white">Получить доступ</button>
         </form>
       </div>
     </section>
-    <section id="page-pricing"></section>
+    <section id="page-pricing">
+      <div class="container">
+        <h2 class="color-white uppercase">Формы подписки</h2>
+        <div class="cards flex flex-wrap">
+          <div class="card card-free flex">
+            <h3 class="color-white uppercase">Бесплатная</h3>
+            <div class="price color-white uppercase">
+              0
+            </div>
+            <button class="btn color-white uppercase">Оформить</button>
+            <div class="card-description color-white">
+              Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама
+            </div>
+          </div>
+          <div class="card card-standart flex">
+            <h3 class="color-white uppercase">Стандартная</h3>
+            <div class="price color-white uppercase">
+              250
+            </div>
+            <button class="btn color-white uppercase">Оформить</button>
+            <div class="card-description color-white">
+              Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве
+            </div>
+          </div>
+          <div class="card card-premium flex">
+            <h3 class="color-white uppercase">Премиум</h3>
+            <div class="price color-white uppercase">
+              500
+            </div>
+            <button class="btn color-white uppercase">Оформить</button>
+            <div class="card-description color-white">
+              Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве
+            </div>
+          </div>
+        </div>
+        <div class="pricing-description color-white">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</div>
+    </div>
+    </section>
     <section id="page-news"></section>
-    <section id="page-app"></section>
+    <section id="page-app">
+      <div class="container">
+        <h2 class="uppercase color-white">Мобильное приложение</h2>
+        <div class="app-description flex">
+          <div class="description color-white">
+            <p>
+              Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS
+            </p>
+            <p>
+              С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.
+            </p>
+            <button class="btn color-white">Скачать</button>
+          </div>
+          <div class="picture">
+            <img src="images/iphone.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-row container flex flex-wrap">
+        <div class="footer-column flex">
+          <h4 class="uppercase color-white">О нас</h4>
+          <a class="color-white" href="#">История компании</a>
+          <a class="color-white" href="#">Карьера</a>
+          <a class="color-white" href="#">Особенности</a>
+          <a class="color-white" href="#">Пресса</a>
+        </div>
+        <div class="footer-column flex">
+          <h4 class="uppercase color-white">Поддержка</h4>
+          <a class="color-white" href="#">База знаний</a>
+          <a class="color-white" href="#">Тарифы</a>
+          <a class="color-white" href="#">Мобильное приложение</a>
+          <a class="color-white" href="#">Условия использования</a>
+        </div>
+        <div class="footer-column flex">
+          <h4 class="uppercase color-white">Контакты</h4>
+          <span class="color-white">hello@music.box</span>
+          <span class="color-white">Russia, Moscow. Music Box studio</span>
+          <span class="color-white">+ 7 499 999 99 99</span>
+        </div>
+        <div class="footer-column flex">
+          <h4 class="uppercase color-white">Подписывайтесь</h4>
+          <div class="icons">
+            <img src="images/icons/social/Google+.png" alt="">
+            <img src="images/icons/social/Twitter.png" alt="">
+            <img src="images/icons/social/Facebook.png" alt="">
+            <img src="images/icons/social/Instagram.png" alt="">
+          </div>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <div class="container flex">
+          <div class="nav-item color-white">Магазин</div>
+          <div class="nav-item color-white">Обслуживание</div>
+          <div class="nav-item color-white">Блог</div>
+          <div class="nav-item color-white">Поддержка</div>
+          <div class="nav-item color-white">Контакты</div>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

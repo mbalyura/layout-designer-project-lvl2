@@ -1,0 +1,75 @@
+section#page-pricing {
+  padding-top: 100px;
+
+  h2 {
+    padding-bottom: 45px;
+  }
+  .cards {
+    justify-content: center;
+    display: inline-flex;
+    gap: 50px;
+
+    .card {
+      width: 366px;
+      height: 620px;
+      flex-direction: column;
+      padding: 22px;
+      border-radius: 15px;
+
+      &-free {
+        background:
+          url(../images/pricing-cards/subscribe_1.png)
+          0 0 / cover
+          no-repeat;
+      }
+
+      &-standart {
+        background:
+          url(../images/pricing-cards/subscribe_2.png)
+          0 0 / cover
+          no-repeat;
+      }
+
+      &-premium {
+        background:
+          url(../images/pricing-cards/subscribe_3.png)
+          0 0 / cover
+          no-repeat;
+      }
+
+      .price {
+        margin-top: 180px;
+        text-align: center;
+        font-size: 64px;
+        line-height: 1.5em;
+
+        &::after {
+          content: "руб.";
+          font-size: 32px;
+          vertical-align: super;
+        }
+      }
+
+      .btn {
+        margin-top: 24px;
+        padding: 21px ;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        background: transparent;
+      }
+
+      .card-description {
+        margin-top: 64px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .pricing-description {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
