@@ -10,18 +10,41 @@ h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 1.5em;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
 h2 {
   font-weight: bold;
   font-size: 38px;
   line-height: 1.5em;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
 }
 
 h3 {
   font-weight: normal;
   font-size: 24px;
   line-height: 45px;
+  text-align: center;
 }
 
 .container {
@@ -49,17 +72,17 @@ h3 {
   text-transform: uppercase;
 }
 
-header .container nav {
+header .description-header nav {
   font-weight: bold;
   font-size: 11px;
   line-height: 13px;
   margin-top: 30px;
 }
-header .container nav .logo {
+header .description-header nav .logo {
   position: relative;
   margin-left: 40px;
 }
-header .container nav .logo:before {
+header .description-header nav .logo:before {
   position: absolute;
   top: -6px;
   left: -40px;
@@ -71,37 +94,37 @@ header .container nav .logo:before {
   background-image: url("../images/icons/logo.svg");
   background-repeat: no-repeat;
 }
-header .container nav .menu {
+header .description-header nav .menu {
   margin-left: 88px;
   width: 315px;
 }
-header .container nav .menu .menu-item:hover {
+header .description-header nav .menu .menu-item:hover {
   color: #fff;
 }
 @media (max-width: 600px) {
-  header .container nav .menu {
+  header .description-header nav .menu {
     flex-direction: column;
     margin-left: 0px;
   }
-  header .container nav .menu .menu-item {
+  header .description-header nav .menu .menu-item {
     margin-left: 0px;
     margin-bottom: 3px;
   }
 }
 @media (max-width: 600px) {
-  header .container nav {
+  header .description-header nav {
     flex-direction: column;
   }
-  header .container nav .menu {
+  header .description-header nav .menu {
     margin-top: 25px;
     margin-left: 0px;
   }
 }
-header .container .search {
+header .description-header .search-form {
   width: 250px;
   margin-top: 25px;
 }
-header .container .search input {
+header .description-header .search-form input {
   color: #fff;
   border-radius: 1em;
   background-color: #3C3B3D;
@@ -111,18 +134,15 @@ header .container .search input {
   padding: 5px 10px;
 }
 @media (max-width: 850px) {
-  header .container {
+  header .description-header {
     flex-direction: column;
   }
-  header .container .search {
+  header .description-header .search {
     margin-top: 15px;
   }
 }
 
 section#page-description {
-  padding-top: 150px;
-  padding-bottom: 200px;
-  flex-direction: column;
   position: relative;
 }
 section#page-description:before {
@@ -130,10 +150,62 @@ section#page-description:before {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("../images/banner.png") top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../images/banner.png") 0 0/cover no-repeat;
   z-index: -100;
+}
+section#page-description .description-body {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  section#page-description .description-body {
+    padding-top: 78px;
+  }
+}
+section#page-description .description-body .form-description {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+section#page-description .description-body .access-form {
+  width: 100%;
+  max-width: 570px;
+}
+section#page-description .description-body .access-form .form-inputs {
+  margin-bottom: 24px;
+}
+section#page-description .description-body .access-form .form-inputs input {
+  flex-grow: 1;
+  height: 50px;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  background: transparent;
+  padding: 16px 22px;
+}
+section#page-description .description-body .access-form .form-inputs input.input-email {
+  margin-left: 24px;
+}
+@media (max-width: 600px) {
+  section#page-description .description-body .access-form .form-inputs input.input-email {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+}
+section#page-description .description-body .access-form .form-inputs input::placeholder {
+  color: #fff;
+}
+@media (max-width: 600px) {
+  section#page-description .description-body .access-form .form-inputs {
+    flex-direction: column;
+  }
+}
+section#page-description .description-body .access-form button {
+  width: 100%;
+  height: 57px;
+  border-radius: 5px;
+  background: #34C176;
 }
 
 @font-face {
