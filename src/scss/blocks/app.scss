@@ -1,0 +1,40 @@
+section#page-app {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .app-description {
+    margin-top: 48px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+
+    .description {
+      width: 600px;
+
+      p {
+        margin-top: 1em;
+      }
+
+      @media (max-width: $tablet) {
+        margin: auto;;
+        order: 2;
+      }
+
+    }
+
+    .btn {
+      padding: 17px 40px;
+      border-radius: 32px;
+      background: $red;
+      margin-top: 16px;
+    }
+
+    .picture {
+      margin: auto;
+      @media (max-width: $tablet) {
+        order: 1;
+      }
+    }
+  }
+}
