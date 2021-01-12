@@ -1,3 +1,28 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5em;
+  background: #08020D;
+  color: #fff;
+}
+
 .color-white {
   color: #fff;
 }
@@ -46,16 +71,23 @@ h3 {
   line-height: 45px;
   text-align: center;
 }
+@media (max-width: 850px) {
+  h3 {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+}
+@media (max-width: 600px) {
+  h3 {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: auto;
-}
-@media (max-width: 1220px) {
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+  padding: 0 20px;
 }
 
 .flex {
@@ -70,6 +102,10 @@ h3 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.btn {
+  color: #fff;
 }
 
 header .description-header nav {
@@ -125,7 +161,6 @@ header .description-header .search-form {
   margin-top: 25px;
 }
 header .description-header .search-form input {
-  color: #fff;
   border-radius: 1em;
   background-color: #3C3B3D;
   width: 100%;
@@ -208,23 +243,220 @@ section#page-description .description-body .access-form button {
   background: #34C176;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
+section#page-pricing {
+  padding-top: 100px;
 }
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: none;
-  box-sizing: border-box;
+section#page-pricing h2 {
+  padding-bottom: 45px;
+}
+section#page-pricing .cards {
+  justify-content: center;
+  display: inline-flex;
+  gap: 50px;
+}
+section#page-pricing .cards .card {
+  width: 366px;
+  height: 620px;
+  flex-direction: column;
+  padding: 22px;
+  border-radius: 15px;
+}
+section#page-pricing .cards .card-free {
+  background: url(../images/pricing-cards/subscribe_1.png) 0 0/cover no-repeat;
+}
+section#page-pricing .cards .card-standart {
+  background: url(../images/pricing-cards/subscribe_2.png) 0 0/cover no-repeat;
+}
+section#page-pricing .cards .card-premium {
+  background: url(../images/pricing-cards/subscribe_3.png) 0 0/cover no-repeat;
+}
+section#page-pricing .cards .card .price {
+  margin-top: 180px;
+  text-align: center;
+  font-size: 64px;
+  line-height: 1.5em;
+}
+section#page-pricing .cards .card .price::after {
+  content: "руб.";
+  font-size: 32px;
+  vertical-align: super;
+}
+section#page-pricing .cards .card .btn {
+  margin-top: 24px;
+  padding: 21px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+}
+section#page-pricing .cards .card .card-description {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+section#page-pricing .pricing-description {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-body {
-  font-family: "Roboto";
-  background: #08020D;
+section#page-news {
+  padding-top: 100px;
+}
+section#page-news h2 {
+  padding-bottom: 50px;
+}
+section#page-news .news-block {
+  gap: 50px;
+}
+section#page-news .news-block .picture {
+  max-width: 575px;
+  flex-shrink: 1;
+}
+section#page-news .news-block .picture img {
+  vertical-align: middle;
+  max-width: 100%;
+  min-width: 370px;
+}
+section#page-news .news-block .news-item {
+  max-width: 575px;
+  flex-shrink: 4;
+}
+section#page-news .news-block .news-item .title {
+  font-size: 30px;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+@media (max-width: 850px) {
+  section#page-news .news-block .news-item .title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+section#page-news .news-block .news-item .text {
+  margin-bottom: 1.5em;
+}
+section#page-news .news-block .news-item .sign img {
+  margin-right: 16px;
+  vertical-align: sub;
+}
+section#page-news .news-block .news-item .sign .name {
+  margin-right: 16px;
+  color: #F89202;
+}
+section#page-news .news-block .news-item .btn {
+  margin-top: 48px;
+  padding: 17px 30px;
+  font-size: 13px;
+  line-height: 150%;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  background: transparent;
+}
+section#page-news .news-block:nth-child(odd) .picture {
+  order: 1;
+}
+@media (max-width: 850px) {
+  section#page-news .news-block:nth-child(odd) .picture {
+    order: 0;
+  }
+}
+section#page-news .news-block + .news-block {
+  margin-top: 65px;
+}
+@media (max-width: 850px) {
+  section#page-news .news-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+section#page-app {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section#page-app .app-description {
+  margin-top: 48px;
+}
+@media (max-width: 850px) {
+  section#page-app .app-description {
+    flex-wrap: wrap;
+  }
+}
+section#page-app .app-description .description {
+  width: 600px;
+}
+section#page-app .app-description .description p {
+  margin-top: 1em;
+}
+@media (max-width: 850px) {
+  section#page-app .app-description .description {
+    margin: auto;
+    order: 1;
+  }
+}
+section#page-app .app-description .btn {
+  padding: 17px 40px;
+  border-radius: 32px;
+  background: #95390C;
+  margin-top: 16px;
+}
+section#page-app .app-description .picture {
+  margin: auto;
+}
+@media (max-width: 850px) {
+  section#page-app .app-description .picture {
+    order: 0;
+  }
+}
+
+footer {
+  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+}
+footer .footer-row {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+footer .footer-row .footer-column {
+  flex-direction: column;
+  flex: 0 0 25%;
+}
+footer .footer-row .footer-column h4 {
+  margin-bottom: 16px;
+}
+@media (max-width: 850px) {
+  footer .footer-row .footer-column {
+    flex-basis: 50%;
+  }
+  footer .footer-row .footer-column:nth-child(n+3) {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  footer .footer-row .footer-column {
+    flex-basis: 100%;
+  }
+  footer .footer-row .footer-column:not(:first-child) {
+    padding-top: 30px;
+  }
+}
+footer .footer-row .footer-column .icons img {
+  margin-right: 24px;
+}
+footer .footer-nav {
+  border-top: 1px solid #E0E0E0;
+  padding: 40px 0px 48px;
+}
+footer .footer-nav .container .nav-item {
+  margin-right: 15px;
+}
+@media (max-width: 600px) {
+  footer .footer-nav .container {
+    flex-direction: column;
+  }
+  footer .footer-nav .container .nav-item + .nav-item {
+    margin-top: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

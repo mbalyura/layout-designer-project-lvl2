@@ -10,7 +10,9 @@
        url("../fonts/Roboto-Regular.ttf");
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   @include reset;
   @include border-box;
 }
@@ -20,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   background: $black;
-
+  color: $white;
 }
 
 @import "framework";

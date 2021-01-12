@@ -17,8 +17,8 @@ section#page-app {
       }
 
       @media (max-width: $tablet) {
-        margin: auto;;
-        order: 2;
+        margin: auto;
+        order: 1;
       }
 
     }
@@ -33,7 +33,7 @@ section#page-app {
     .picture {
       margin: auto;
       @media (max-width: $tablet) {
-        order: 1;
+        order: 0;
       }
     }
   }

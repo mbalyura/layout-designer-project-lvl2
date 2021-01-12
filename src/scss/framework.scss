@@ -54,10 +54,6 @@ h3 {
   max-width: $desctop;
   margin: auto;
   padding: 0 20px;
-  // @media (max-width: $desctop + 20px) {
-  //   margin-left: 20px;
-  //   margin-right: 20px;
-  // }
 }
 
 .flex {
@@ -74,4 +70,8 @@ h3 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.btn {
+  color: $white;
 }
