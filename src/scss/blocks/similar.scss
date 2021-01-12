@@ -1,0 +1,41 @@
+section#page-similar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .similar-list {
+    margin-top: 25px;
+
+    .similar-card {
+      margin-top: 25px;
+      margin-right: 50px;
+
+      @media (max-width: $tablet) {
+        width: 180px;
+      }
+
+      @media (max-width: $phone) {
+        width: 137px;
+      }
+
+      .picture {
+
+        img {
+          vertical-align: middle;
+          width: 100%;
+        }
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 1em;
+        text-align: center;
+      }
+
+      .fans {
+        text-align: center;
+      }
+    }
+  }
+
+}

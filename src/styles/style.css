@@ -6,8 +6,8 @@
   src: local("Roboto"), url("../fonts/Roboto-Regular.ttf");
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -35,7 +35,6 @@ h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 1.5em;
-  text-align: center;
 }
 @media (max-width: 850px) {
   h1 {
@@ -52,7 +51,6 @@ h2 {
   font-weight: bold;
   font-size: 38px;
   line-height: 1.5em;
-  text-align: center;
 }
 @media (max-width: 850px) {
   h2 {
@@ -69,7 +67,6 @@ h3 {
   font-weight: normal;
   font-size: 24px;
   line-height: 45px;
-  text-align: center;
 }
 @media (max-width: 850px) {
   h3 {
@@ -104,21 +101,26 @@ h3 {
   text-transform: uppercase;
 }
 
-.btn {
-  color: #fff;
+.ta-center {
+  text-align: center;
 }
 
-header .description-header nav {
+.btn {
+  color: #fff;
+  cursor: pointer;
+}
+
+header.description-header nav {
   font-weight: bold;
   font-size: 11px;
   line-height: 13px;
   margin-top: 30px;
 }
-header .description-header nav .logo {
+header.description-header nav .logo {
   position: relative;
   margin-left: 40px;
 }
-header .description-header nav .logo:before {
+header.description-header nav .logo::before {
   position: absolute;
   top: -6px;
   left: -40px;
@@ -130,37 +132,42 @@ header .description-header nav .logo:before {
   background-image: url("../images/icons/logo.svg");
   background-repeat: no-repeat;
 }
-header .description-header nav .menu {
+header.description-header nav .menu {
   margin-left: 88px;
   width: 315px;
 }
-header .description-header nav .menu .menu-item:hover {
+header.description-header nav .menu .menu-item:hover {
   color: #fff;
 }
 @media (max-width: 600px) {
-  header .description-header nav .menu {
+  header.description-header nav .menu {
     flex-direction: column;
     margin-left: 0px;
   }
-  header .description-header nav .menu .menu-item {
+  header.description-header nav .menu .menu-item {
     margin-left: 0px;
     margin-bottom: 3px;
   }
 }
 @media (max-width: 600px) {
-  header .description-header nav {
+  header.description-header nav {
     flex-direction: column;
   }
-  header .description-header nav .menu {
+  header.description-header nav .menu {
     margin-top: 25px;
     margin-left: 0px;
   }
 }
-header .description-header .search-form {
+header.description-header .search-form {
   width: 250px;
   margin-top: 25px;
 }
-header .description-header .search-form input {
+@media (max-width: 850px) {
+  header.description-header .search-form {
+    width: 100%;
+  }
+}
+header.description-header .search-form input {
   border-radius: 1em;
   background-color: #3C3B3D;
   width: 100%;
@@ -169,24 +176,17 @@ header .description-header .search-form input {
   padding: 5px 10px;
 }
 @media (max-width: 850px) {
-  header .description-header {
+  header.description-header {
     flex-direction: column;
   }
-  header .description-header .search {
+  header.description-header .search {
     margin-top: 15px;
   }
 }
 
 section#page-description {
   position: relative;
-}
-section#page-description:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: url("../images/banner.png") 0 0/cover no-repeat;
-  z-index: -100;
+  background: url("../images/banner.png") center/cover no-repeat;
 }
 section#page-description .description-body {
   padding-top: 150px;
@@ -457,6 +457,162 @@ footer .footer-nav .container .nav-item {
   footer .footer-nav .container .nav-item + .nav-item {
     margin-top: 16px;
   }
+}
+
+section#artist-description {
+  position: relative;
+  background: url("../images/Morten Harket.png") center/cover no-repeat;
+}
+section#artist-description .description-body {
+  padding-top: 200px;
+  padding-bottom: 225px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  section#artist-description .description-body {
+    padding-top: 55px;
+  }
+}
+section#artist-description .description-body .fans {
+  margin-top: 1em;
+  margin-bottom: 24px;
+}
+section#artist-description .description-body .btn {
+  padding: 22px 31px;
+  width: 200px;
+  margin-right: 24px;
+  margin-top: 24px;
+  text-align: start;
+}
+section#artist-description .description-body .btn.btn-mix {
+  background: #5328A1;
+  border-radius: 5px;
+  line-height: 20px;
+}
+section#artist-description .description-body .btn.btn-mix::before {
+  content: url(../images/icons/play-button.svg);
+  fill: red;
+  float: left;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+}
+section#artist-description .description-body .btn.btn-fav {
+  background: #95390C;
+  border-radius: 5px;
+  line-height: 20px;
+}
+section#artist-description .description-body .btn.btn-fav::before {
+  content: url(../images/icons/heart.svg);
+  fill: red;
+  float: left;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+section#page-popular-track {
+  padding-top: 100px;
+}
+section#page-popular-track .track-list {
+  padding-top: 25px;
+}
+section#page-popular-track .track-list .track-card {
+  margin-top: 25px;
+  padding-right: 50px;
+  flex-basis: 50%;
+  gap: 25px;
+  font-size: 13px;
+}
+@media (max-width: 850px) {
+  section#page-popular-track .track-list .track-card {
+    flex-basis: 100%;
+    padding-right: 0;
+  }
+}
+section#page-popular-track .track-list .track-card .picture {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  margin-right: 15px;
+}
+section#page-popular-track .track-list .track-card .picture img {
+  vertical-align: middle;
+  width: 100%;
+}
+section#page-popular-track .track-list .track-card .track-description {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+section#page-popular-track .track-list .track-card .track-description .title {
+  font-weight: bold;
+}
+
+section#page-discography {
+  padding-top: 100px;
+}
+section#page-discography .album-list {
+  margin-top: 25px;
+}
+section#page-discography .album-list .album-card {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+@media (max-width: 850px) {
+  section#page-discography .album-list .album-card {
+    width: 180px;
+  }
+}
+@media (max-width: 600px) {
+  section#page-discography .album-list .album-card {
+    width: 137px;
+  }
+}
+section#page-discography .album-list .album-card .picture img {
+  vertical-align: middle;
+  width: 100%;
+}
+section#page-discography .album-list .album-card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1em;
+}
+
+section#page-similar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section#page-similar .similar-list {
+  margin-top: 25px;
+}
+section#page-similar .similar-list .similar-card {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+@media (max-width: 850px) {
+  section#page-similar .similar-list .similar-card {
+    width: 180px;
+  }
+}
+@media (max-width: 600px) {
+  section#page-similar .similar-list .similar-card {
+    width: 137px;
+  }
+}
+section#page-similar .similar-list .similar-card .picture img {
+  vertical-align: middle;
+  width: 100%;
+}
+section#page-similar .similar-list .similar-card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1em;
+  text-align: center;
+}
+section#page-similar .similar-list .similar-card .fans {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

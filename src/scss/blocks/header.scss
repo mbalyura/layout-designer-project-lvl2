@@ -1,5 +1,4 @@
-header {
-  .description-header {
+header.description-header {
 
     nav {
       font-weight: bold;
@@ -11,7 +10,7 @@ header {
         position: relative;
         margin-left: 40px;
 
-        &:before {
+        &::before {
           position: absolute;
           top: -6px;
           left: -40px;
@@ -61,6 +60,10 @@ header {
       width: 250px;
       margin-top: 25px;
 
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+
       & input {
         border-radius: 1em;
         background-color: $dark;
@@ -74,9 +77,8 @@ header {
       flex-direction: column;
 
       .search {
+
         margin-top: 15px;
       }
     }
   }
-
-}

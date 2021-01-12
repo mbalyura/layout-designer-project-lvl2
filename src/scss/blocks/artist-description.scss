@@ -1,0 +1,62 @@
+section#artist-description {
+  position: relative;
+
+  background:
+    url('../images/Morten\ Harket.png')
+    center / cover
+    no-repeat;
+
+  .description-body {
+    padding-top: 200px;
+    padding-bottom: 225px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: $phone) {
+      padding-top: 55px;
+    }
+
+    .fans {
+      margin-top: 1em;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      padding: 22px 31px;
+      width: 200px;
+      margin-right: 24px;
+      margin-top: 24px;
+      text-align: start;
+
+      &.btn-mix {
+        background: $purple;
+        border-radius: 5px;
+        line-height: 20px;
+
+        &::before {
+          content: url(../images/icons/play-button.svg);
+          fill: red;
+          float: left;
+          margin-right: 16px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &.btn-fav {
+        background: $red;
+        border-radius: 5px;
+        line-height: 20px;
+
+        &::before {
+          content: url(../images/icons/heart.svg);
+          fill: red;
+          float: left;
+          margin-right: 16px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

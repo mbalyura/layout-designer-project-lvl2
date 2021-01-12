@@ -1,0 +1,36 @@
+section#page-discography {
+  padding-top: 100px;
+
+  .album-list {
+    margin-top: 25px;
+
+    .album-card {
+      margin-top: 25px;
+      margin-right: 50px;
+
+      @media (max-width: $tablet) {
+        width: 180px;
+      }
+
+      @media (max-width: $phone) {
+        width: 137px;
+      }
+
+      .picture {
+
+        img {
+          vertical-align: middle;
+          width: 100%;
+
+        }
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 1em;
+      }
+    }
+  }
+
+}
