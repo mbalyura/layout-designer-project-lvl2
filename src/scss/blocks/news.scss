@@ -2,17 +2,20 @@ section#page-news {
   padding-top: 100px;
 
   h2 {
-    padding-bottom: 50px;
+    padding-bottom: 48px;
   }
 
   .news-block {
-    gap: 50px;
+    row-gap: 48px;
+    column-gap: 50px;
 
     .picture {
       max-width: 575px;
+      width: 100%;
       flex-shrink: 1;
       img {
         vertical-align: middle;
+        width: 100%;
         max-width: 100%;
         min-width: 370px;
       }
@@ -33,25 +36,29 @@ section#page-news {
         }
       }
       .text {
-        margin-bottom: 1.5em;
+        margin-bottom: 22px;
+        color: $dark-gray;
       }
 
       .sign {
+        font-size: 13px;
+        color: $dark-gray;
+
         img {
-          margin-right: 16px;
+          margin-right: 1em;
           vertical-align: sub;
         }
 
         .name {
-          margin-right: 16px;
+          margin-right: 1em;
           color: $orange;
         }
       }
 
       .btn {
-        margin-top: 48px;
+        margin-top: 44px;
         padding: 17px 30px;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 150%;
         border: 1px solid $dark-gray;
         border-radius: 5px;
@@ -68,7 +75,7 @@ section#page-news {
     }
 
     & + .news-block {
-      margin-top: 65px;
+      margin-top: 64px;
     }
 
     @media (max-width: $tablet) {

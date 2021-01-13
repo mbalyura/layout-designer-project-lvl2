@@ -1,8 +1,7 @@
 section#page-pricing {
-  padding-top: 100px;
 
   h2 {
-    padding-bottom: 45px;
+    padding-bottom: 48px;
   }
   .cards {
     justify-content: center;
@@ -10,49 +9,72 @@ section#page-pricing {
     gap: 50px;
 
     .card {
-      width: 366px;
-      height: 620px;
+      width: calc(1100px / 3);
+      height: 615px;
       flex-direction: column;
-      padding: 22px;
-      border-radius: 15px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 16px;
 
       &-free {
         background:
           url(../images/pricing-cards/subscribe_1.png)
-          0 0 / cover
+          0 center / cover
           no-repeat;
       }
 
       &-standart {
         background:
           url(../images/pricing-cards/subscribe_2.png)
-          0 0 / cover
+          0 center / cover
           no-repeat;
       }
 
       &-premium {
         background:
           url(../images/pricing-cards/subscribe_3.png)
-          0 0 / cover
+          0 center / cover
           no-repeat;
       }
 
+      @media (max-width: $tablet) {
+        width: 374px;
+        height: 595px;
+        background-position: 0 0px;
+      }
+
+      h3 {
+        margin-top: 20px;
+
+        @media (max-width: $tablet) {
+          margin-top: 16px;
+        }
+      }
+
       .price {
-        margin-top: 180px;
+        margin-top: 176px;
         text-align: center;
         font-size: 64px;
         line-height: 1.5em;
 
+        @media (max-width: $tablet) {
+          margin-top: 179px;
+        }
+
         &::after {
           content: "руб.";
           font-size: 32px;
-          vertical-align: super;
+          line-height: 90px;
+          vertical-align: text-bottom;
+          margin-left: 16px;
         }
       }
 
       .btn {
+        font-size: 16px;
+        line-height: 1.5em;
         margin-top: 24px;
-        padding: 21px ;
+        padding: 20px ;
         border: 1px solid $white;
         border-radius: 5px;
         background: transparent;

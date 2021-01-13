@@ -1,4 +1,4 @@
-section#page-description {
+section.main {
   position: relative;
 
   background:
@@ -20,6 +20,10 @@ section#page-description {
       margin-top: 32px;
       margin-bottom: 16px;
       text-align: center;
+
+      @media (max-width: $phone) {
+        margin-top: 15px;
+      }
     }
     .access-form {
       width: 100%;
@@ -31,10 +35,13 @@ section#page-description {
         input {
           flex-grow: 1;
           height: 50px;
-          border: 2px solid #CACACA;
           border-radius: 3px;
-          background: transparent;
+          // border: 2px solid rgba($color: $dark-gray, $alpha: 0.1);
+          border: 2px solid $dark-gray;
+          // background: rgba($color: $white, $alpha: 0.1);
+          background: none;
           padding: 16px 22px;
+          color: $white;
 
           &.input-email {
             margin-left: 24px;
@@ -47,6 +54,9 @@ section#page-description {
 
           &::placeholder {
             color: $white;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
           }
         }
 
@@ -57,7 +67,7 @@ section#page-description {
 
       button {
         width: 100%;
-        height: 57px;
+        height: 58px;
         border-radius: 5px;
         background: $green;
       }
