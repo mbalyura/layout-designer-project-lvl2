@@ -1,44 +1,47 @@
 footer {
-  background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  margin-top: 100px;
 
   .footer-row {
-    padding-top: 60px;
-    padding-bottom: 75px;
+    padding-top: 63px;
+    padding-bottom: 72px;
 
     .footer-column {
       flex-direction: column;
       flex: 0 0 25%;
 
       h4 {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
       }
 
       @media (max-width: $tablet) {
         flex-basis: 50%;
 
         &:nth-child(n+3) {
-          padding-top: 30px;
+          padding-top: 34px;
         }
       }
       @media (max-width: $phone) {
         flex-basis: 100%;
 
         &:not(:first-child) {
-          padding-top: 30px;
+          padding-top: 34px;
         }
       }
 
       .icons img {
-        margin-right: 24px;
+        margin-right: 21px;
       }
     }
   }
 
   .footer-nav {
     border-top: 1px solid $gray;
-    padding: 40px 0px 48px;
+    padding: 41px 0px 48px;
 
     .container {
+      padding: 0 20px;
+
       .nav-item {
         margin-right: 15px;
       }

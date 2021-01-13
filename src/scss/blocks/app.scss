@@ -1,6 +1,5 @@
 section#page-app {
   padding-top: 100px;
-  padding-bottom: 100px;
 
   .app-description {
     margin-top: 48px;
@@ -31,9 +30,15 @@ section#page-app {
     }
 
     .picture {
-      margin: auto;
+      margin-left: 144px;
+
       @media (max-width: $tablet) {
         order: 0;
+        margin: auto;
+      }
+
+      img {
+        vertical-align: middle;
       }
     }
   }

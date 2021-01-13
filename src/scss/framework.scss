@@ -47,10 +47,28 @@ h3 {
   }
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .container {
   max-width: $desctop;
   margin: auto;
-  padding: 0 20px;
+  padding: 100px 20px 0px;
+
 }
 
 .flex {
