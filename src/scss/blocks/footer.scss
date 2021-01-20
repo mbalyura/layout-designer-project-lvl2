@@ -21,6 +21,7 @@ footer {
           padding-top: 34px;
         }
       }
+
       @media (max-width: $phone) {
         flex-basis: 100%;
 
@@ -37,7 +38,7 @@ footer {
 
   .footer-nav {
     border-top: 1px solid $gray;
-    padding: 41px 0px 48px;
+    padding: 41px 0 48px;
 
     .container {
       padding: 0 20px;
@@ -50,10 +51,9 @@ footer {
         flex-direction: column;
 
         .nav-item + .nav-item {
-            margin-top: 16px;
+          margin-top: 16px;
         }
       }
     }
-
   }
 }

@@ -1,6 +1,5 @@
 section.main {
   position: relative;
-
   background:
     url('../images/banner.png')
     center / cover
@@ -25,6 +24,7 @@ section.main {
         margin-top: 15px;
       }
     }
+
     .access-form {
       width: 100%;
       max-width: 570px;
@@ -36,9 +36,7 @@ section.main {
           flex-grow: 1;
           height: 50px;
           border-radius: 3px;
-          // border: 2px solid rgba($color: $dark-gray, $alpha: 0.1);
           border: 2px solid $dark-gray;
-          // background: rgba($color: $white, $alpha: 0.1);
           background: none;
           padding: 16px 22px;
           color: $white;
@@ -47,7 +45,7 @@ section.main {
             margin-left: 24px;
 
             @media (max-width: $phone) {
-              margin-left: 0px;
+              margin-left: 0;
               margin-top: 24px;
             }
           }
