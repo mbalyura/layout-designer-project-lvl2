@@ -15,32 +15,20 @@ section#page-pricing {
       padding-left: 24px;
       padding-right: 24px;
       border-radius: 16px;
+      background-position: 0 center;
+      background-size: cover;
+      background-repeat: no-repeat;
 
       &-free {
-        background:
-          url(../images/pricing-cards/subscribe_1.png)
-          0 center / cover
-          no-repeat;
+        background-image: url(../images/pricing-cards/subscribe_1.png);
       }
 
       &-standart {
-        background:
-          url(../images/pricing-cards/subscribe_2.png)
-          0 center / cover
-          no-repeat;
+        background-image: url(../images/pricing-cards/subscribe_2.png);
       }
 
       &-premium {
-        background:
-          url(../images/pricing-cards/subscribe_3.png)
-          0 center / cover
-          no-repeat;
-      }
-
-      @media (max-width: $tablet) {
-        width: 374px;
-        height: 595px;
-        background-position: 0 0;
+        background-image: url(../images/pricing-cards/subscribe_3.png);
       }
 
       h3 {

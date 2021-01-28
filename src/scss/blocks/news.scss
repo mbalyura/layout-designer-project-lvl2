@@ -6,8 +6,7 @@ section#page-news {
   }
 
   .news-block {
-    row-gap: 48px;
-    column-gap: 50px;
+    gap: 50px;
 
     .picture {
       max-width: 575px;
@@ -16,8 +15,6 @@ section#page-news {
 
       img {
         vertical-align: middle;
-        width: 100%;
-        max-width: 100%;
         min-width: 370px;
       }
     }

@@ -289,22 +289,18 @@ section#page-pricing .cards .card {
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 16px;
+  background-position: 0 center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section#page-pricing .cards .card-free {
-  background: url(../images/pricing-cards/subscribe_1.png) 0 center/cover no-repeat;
+  background-image: url(../images/pricing-cards/subscribe_1.png);
 }
 section#page-pricing .cards .card-standart {
-  background: url(../images/pricing-cards/subscribe_2.png) 0 center/cover no-repeat;
+  background-image: url(../images/pricing-cards/subscribe_2.png);
 }
 section#page-pricing .cards .card-premium {
-  background: url(../images/pricing-cards/subscribe_3.png) 0 center/cover no-repeat;
-}
-@media (max-width: 850px) {
-  section#page-pricing .cards .card {
-    width: 374px;
-    height: 595px;
-    background-position: 0 0;
-  }
+  background-image: url(../images/pricing-cards/subscribe_3.png);
 }
 section#page-pricing .cards .card h3 {
   margin-top: 20px;
@@ -360,8 +356,7 @@ section#page-news h2 {
   padding-bottom: 48px;
 }
 section#page-news .news-block {
-  row-gap: 48px;
-  column-gap: 50px;
+  gap: 50px;
 }
 section#page-news .news-block .picture {
   max-width: 575px;
@@ -370,8 +365,6 @@ section#page-news .news-block .picture {
 }
 section#page-news .news-block .picture img {
   vertical-align: middle;
-  width: 100%;
-  max-width: 100%;
   min-width: 370px;
 }
 section#page-news .news-block .news-item {
@@ -470,9 +463,6 @@ section#page-app .app-description .picture {
     margin: auto;
     width: 100%;
     margin-bottom: -30px;
-  }
-  section#page-app .app-description .picture img {
-    width: 100%;
   }
 }
 section#page-app .app-description .picture img {

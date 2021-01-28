@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/mbalyura/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/mbalyura/layout-designer-project-lvl2/actions)
+Landing page. Full adaptive with flex.
 
 ### Demo
 ### http://pumped-potato.surge.sh
